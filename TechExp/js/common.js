@@ -110,7 +110,7 @@ $(function() {
 			removalDelay: 300,
 			callbacks: {
 				beforeChange: function() {
-					this.items[0].src = this.items[0].src + '?=' + Math.random(); 
+					this.items[0].src = this.items[0].src + '?=' + Math.random();
 				},
 				open: function() {
 					$.magnificPopup.instance.next = function() {
@@ -124,7 +124,7 @@ $(function() {
 						setTimeout(function() { $.magnificPopup.proto.prev.call(self); }, 120);
 					}
 				},
-				imageLoadComplete: function() { 
+				imageLoadComplete: function() {
 					var self = this;
 					setTimeout(function() { self.wrap.addClass('mfp-image-loaded'); }, 16);
 				}
@@ -139,7 +139,7 @@ $(function() {
 	});
 
 	$(".s-adv").waypoint(function() {
-		
+
 		$({blurRadius: 5}).animate({blurRadius: 0}, {
 			duration: 1200,
 			easing: 'swing',
@@ -250,3 +250,4 @@ $(function() {
 	});
 
 });
+
