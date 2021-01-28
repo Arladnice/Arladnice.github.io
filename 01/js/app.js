@@ -55,4 +55,18 @@ $(function (params) {
 		$('.sites').removeClass('menu__active');
 	});
 
+	$('.button.intro__button').on('click', function (event) {
+		event.preventDefault();
+		$('.popup').css({ display: 'flex' });
+	});
+
+	$('.button.feedback__button').on('click', function (event) {
+		event.preventDefault();
+		$('.popup').css({ display: 'flex' });
+	});
+
+	$('.popup__close').on('click', function (event) {
+		event.preventDefault();
+		$('.popup').hide();
+	});
 });
