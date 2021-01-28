@@ -178,7 +178,7 @@ p {
 	justify-content: center;
 	background-color: #3d053e;
 	transition: 0.5s;
-    transform: translateX(100%);
+	transform: translateX(100%);
 }
 
 .menu__active {
@@ -199,7 +199,7 @@ p {
 	padding-right: 20px;
 	font-family: 'SFProDisplay';
 	color: #fff;
-    font-size: 18px;
+	font-size: 18px;
 }
 
 .menu__list-close {
@@ -666,17 +666,18 @@ p {
 	height: 100%;
 	background-color: rgba(61, 5, 62, 0.7);
 	top: 0;
-    display: none;
+	display: none;
 	justify-content: center;
 	align-items: center;
-    border-radius: 4px;
-    z-index: 1000;
+	border-radius: 4px;
+	z-index: 1000;
+	color: #fff;
 }
 
 .popup-content {
 	width: 500px;
-	height: 350px;
-	background-color: gray;
+	height: 460px;
+	background-color: #3b393b;
 	opacity: 0.8;
 	text-align: justify;
 	padding: 20px;
@@ -711,18 +712,25 @@ p {
 }
 
 .popup__close {
-    position: absolute;
+	position: absolute;
 	top: 0;
 	right: 10px;
-	font-size: 42px;
-	color: #333;
+	font-size: 36px;
+	color: #fff;
 	transform: rotate(45deg);
 	cursor: pointer;
 }
 
 .popup__close:hover {
-    color: #fff;
+	color: #19031a;
 }
+
+.btn.send-tz {
+	font-size: 18px;
+	padding: 5px 5px;
+	font-family: 'SFProDisplay';
+}
+
 @media (max-width: 1220px) {
 	/* Intro */
 
@@ -1052,6 +1060,17 @@ p {
 	.footer__copyright-item2 {
 		margin: 0;
 		text-align: center;
+		width: 100%;
+	}
+
+	/* Modal */
+
+	.popup__email {
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.popup__number {
 		width: 100%;
 	}
 }
