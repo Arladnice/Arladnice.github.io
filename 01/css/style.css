@@ -676,7 +676,7 @@ p {
 
 .popup-content {
 	width: 500px;
-	height: 460px;
+	height: 440px;
 	background-color: #3b393b;
 	opacity: 0.8;
 	text-align: justify;
@@ -698,12 +698,15 @@ p {
 	width: 100%;
 	margin: 10px 0;
 	height: 10vh;
+	resize: none;
 }
 
-.btn.add-tz {
+.button.add-tz {
 	font-size: 18px;
 	padding: 5px 5px;
 	font-family: 'SFProDisplay';
+	color: #18191f;
+	cursor: pointer;
 }
 
 .popup__agreement {
@@ -725,10 +728,14 @@ p {
 	color: #19031a;
 }
 
-.btn.send-tz {
+.button.send-tz {
 	font-size: 18px;
 	padding: 5px 5px;
 	font-family: 'SFProDisplay';
+	color: #18191f;
+	cursor: pointer;
+	position: absolute;
+    right: 18px;
 }
 
 @media (max-width: 1220px) {
