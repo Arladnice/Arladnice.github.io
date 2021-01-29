@@ -205,8 +205,8 @@ p {
 .menu__list-close {
 	position: absolute;
 	top: 0;
-	right: 10px;
-	font-size: 42px;
+	right: -22px;
+	font-size: 36px;
 	color: #fff;
 	transform: rotate(45deg);
 	cursor: pointer;
@@ -699,6 +699,16 @@ p {
 	margin: 10px 0;
 	height: 10vh;
 	resize: none;
+}
+
+.popup__check {
+	display: flex;
+	margin-top: 6px;
+}
+
+.popup__check p {
+	margin-top: 8px;
+	margin-left: 4px;
 }
 
 .button.add-tz {
