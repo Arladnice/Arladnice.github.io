@@ -388,7 +388,7 @@ p {
 }
 
 .feedback {
-	background: #3d053e;
+	background: #3d053e url("../img/Group.png") no-repeat center;
 	text-align: center;
 	position: relative;
 }
