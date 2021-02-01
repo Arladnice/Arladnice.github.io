@@ -30,6 +30,11 @@ h6 {
 p {
 	margin: 0 0 10px;
 }
+
+.is-menu-open {
+    overflow: hidden;
+}
+
 /* Container */
 .container {
 	width: 100%;

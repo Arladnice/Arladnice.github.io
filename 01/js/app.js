@@ -57,11 +57,16 @@ $(function (params) {
 
 	$('.button.intro__button').on('click', function (event) {
 		event.preventDefault();
+		let pagePos = $(window).scrollTop();
+		$('body').addClass('is-menu-open').attr('data-scroll', pagePos);
 		$('.popup').css({ display: 'flex' });
   });
 
 	$('.popup__close').on('click', function (event) {
 			event.preventDefault();
+			let pagePos = $(window).scrollTop();
+			$('body').removeClass('is-menu-open').attr('data-scroll', pagePos);
+			$('.popup').css({ display: 'flex' });
 			$('.popup').hide();
 	});
 
@@ -71,4 +76,5 @@ $(function (params) {
 	});
 
 	$("#phone").mask("+7 (999) 999 99 99");
+
 });
