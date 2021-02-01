@@ -77,18 +77,18 @@ p {
 	text-decoration: none;
 	margin-left: 50px;
 }
-/*
+
 .nav__link.active {
 	text-decoration: underline;
-} */
+}
 
 .nav__link:first-child {
 	margin-left: 0;
 }
 
-/* .nav__link:hover {
+.nav__link:hover {
 	text-decoration: underline;
-} */
+}
 
 .number {
 	font-family: 'SFProDisplaySemibold';
@@ -177,7 +177,7 @@ p {
 	display: flex;
 	/* align-items: center; */
 	justify-content: center;
-	background-color: #3d053e;
+	background-color: #2D083F;
 	transition: 0.5s;
 	transform: translateX(100%);
 }
@@ -349,20 +349,22 @@ p {
 }
 
 .approach__inner {
-	display: flex;
 	margin-bottom: 96px;
-	flex-wrap: wrap;
 }
 
 .approach__item {
-	width: 50%;
-	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	
 }
 
 .approach__item-list {
+	width: 50%;
+	position: relative;
 	display: block;
 	position: relative;
 	margin-bottom: 64px;
+	padding-right: 64px;
 	padding-left: 85px;
 }
 
@@ -389,7 +391,7 @@ p {
 }
 
 .feedback {
-	background: #3d053e url("../img/Group.png") no-repeat center;
+	background: #2D083F url("../img/Group.png") no-repeat center;
 	text-align: center;
 	position: relative;
 }
@@ -557,7 +559,7 @@ p {
 .footer {
 	margin-top: 64px;
 	padding: 64px 0;
-	background-color: #3d053e;
+	background-color: #2D083F;
 	border-bottom: 1px solid rgb(255, 255, 255, 0.1);
 }
 
@@ -651,7 +653,7 @@ p {
 }
 
 .copyright {
-	background-color: #3d053e;
+	background-color: #2D083F;
 }
 
 /* Modal */
@@ -701,17 +703,6 @@ p {
 	height: 10vh;
 	resize: none;
 }
-
-.popup__check {
-	display: flex;
-	margin-top: 6px;
-}
-
-.popup__check p {
-	margin-top: 8px;
-	margin-left: 4px;
-}
-
 
 .popup__check {
 	display: flex;
@@ -787,9 +778,7 @@ p {
 	.approach__item-img {
 		display: none;
 	}
-	.approach__item {
-		width: 100%;
-	}
+	
 
 	/* Feedback */
 	.feedback__title {
@@ -860,7 +849,7 @@ p {
 		display: none;
 	}
 
-	.approach__item {
+	.approach__item-list {
 		width: 100%;
 	}
 
@@ -1046,7 +1035,11 @@ p {
 
 	/* Approach */
 
-	.approach__inner {
+	.services__inner:last-child {
+		margin-bottom: 0;
+	}
+
+	.services__inner {
 		margin-bottom: 0;
 	}
 
