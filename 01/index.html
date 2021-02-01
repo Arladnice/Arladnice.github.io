@@ -40,9 +40,7 @@
                         <a href="#">Разработка и модернизация сайтов</a>
                         <a href="#">Разработка мобильных приложений</a>
                     </div>
-                    <div class="menu__list-text">закрыть окно</div>
-                    <div class="menu__list-close">+
-                    </div>
+                    <div class="menu__list-close">+</div>
                 </nav>
             </div>
     </header>
@@ -172,8 +170,8 @@
     <div class="feedback">
         <div class="feedback__title">Опишите нам вашу задачу <br> и мы найдем для нее решение</div>
         <a class="button feedback__button" href="#">Описать задачу</a>
-        <img class="feedback__svg-first" src="./img/box.svg" alt="box">
-        <img class="feedback__svg-second" src="./img/box2.svg" alt="box">
+        <!-- <img class="feedback__svg-first" src="./img/box.svg" alt="box">
+        <img class="feedback__svg-second" src="./img/box2.svg" alt="box"> -->
     </div>
 
     <!-- Projects -->
@@ -331,23 +329,33 @@
         <div class="popup-content">
             <div class="popup__title">Запрос коммерческого предложения</div>
             <div class="popup__close">+</div>
-            <form action="">
+            <form>
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="kubteh">
+                <input type="hidden" name="admin_email" value="wfm69242@zwoho.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+
                 <input placeholder="Контактное лицо" type="text" class="popup__contact">
-                <input placeholder="Телефон" type="text" class="popup__number">
-                <input placeholder="Email" type="text" class="popup__email">
+                <input placeholder="Телефон" type="tel" id="phone" class="popup__number">
+                <input placeholder="Email" type="email" class="popup__email">
                 <textarea placeholder="Дополнительная информациия" class="popup__text"></textarea>
-                <button class="btn add-tz">Прикрепить ТЗ</button>
+                <button class="button add-tz">Прикрепить ТЗ</button>
                 <br>
-                <input type="checkbox" name="agreement" value="yes" class="popup__agreement">
+                <div class="popup__check">
+                    <input type="checkbox" name="agreement" value="yes" class="popup__agreement">
                     <p>Я даю свое согласие на обработку, хранение и использование своих персональных данных на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г. В объеме, внесенном мной в форму размещенную выше, в целях получения консультационных услуг.</p>
+                </div>
                     <Br>
-                <button class="btn send-tz">Отправить</button>
+                <button class="button send-tz">Отправить</button>
             </form>
         </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
 
 </body>
 </html>

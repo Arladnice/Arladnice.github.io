@@ -60,13 +60,15 @@ $(function (params) {
 		$('.popup').css({ display: 'flex' });
   });
 
-  $('.popup__close').on('click', function (event) {
-		event.preventDefault();
-		$('.popup').hide();
-  });
+	$('.popup__close').on('click', function (event) {
+			event.preventDefault();
+			$('.popup').hide();
+	});
 
 	$('.button.feedback__button').on('click', function (event) {
 		event.preventDefault();
 		$('.popup').css({ display: 'flex' });
 	});
+
+	$("#phone").mask("+7 (999) 999 99 99");
 });
